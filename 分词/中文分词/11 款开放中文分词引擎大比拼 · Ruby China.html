@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://ruby-china.org/topics/28000 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>11 款开放中文分词引擎大比拼 · Ruby China</title>
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta content="True" name="HandheldFriendly">
+  <link rel="alternate" type="application/rss+xml" title="订阅最新帖" href="https://ruby-china.org/topics/feed">
+  <link rel="stylesheet" media="screen" href="./11 款开放中文分词引擎大比拼 · Ruby China_files/front-60fa5b2db9e56b989804837c4ef6062839b939ddf54588127bf7430a8d1aeed2.css" data-turbolinks-track="reload">
+  
+  
+  <meta name="action-cable-url" content="/cable">
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="PwcSCVdYNQQ0BSfsmLgLpBJuqrAWuNi0D5ybqdYHFCCQYiIdlblM5CJLS5MCxJaccCjhdMrpdn3WTbOpnHy3Cw==">
+  <meta name="apple-itunes-app" content="app-id=1072028763">
+<meta name="google-site-verification" content="YRy3qLejfhrOT_FxPRQn2p5h_ykCLOmhpP3Q5QUWdHU">
+<link rel="icon" href="./11 款开放中文分词引擎大比拼 · Ruby China_files/c309db0b49cab85a32f756541ea0e2b0.png">
+<link rel="mask-icon" href="https://ruby-china-files.b0.upaiyun.com/photo/2016/8c03593544987c35a95d5f2e83e86e61.svg!large">
+<link rel="apple-touch-icon" href="https://ruby-china-files.b0.upaiyun.com/photo/2017/689eac2db74b87236f371e2898580746.png!large">
+
+<style>
+.header .navbar-brand b { color: #EB5424; }
+.header #main-nav-menu .navbar-nav li a:hover, .header #main-nav-menu .navbar-nav li.active a, .header #main-nav-menu .navbar-nav li.active a:focus, .header #main-nav-menu .navbar-nav li.active a:hover { color: #EB5424; border-color: #EB5424; }
+.header .navbar-inverse .navbar-nav .open .dropdown-menu li.active a { color: #EB5424; }
+.turbolinks-progress-bar { color: #EB5424 !important; }
+</style>
+
+  <script async="" src="./11 款开放中文分词引擎大比拼 · Ruby China_files/analytics.js.下载"></script><script src="./11 款开放中文分词引擎大比拼 · Ruby China_files/app-31216f0f247043f17430e7629e852a12da3c7804fca6d6b2e60b5022609314da.js.下载" data-turbolinks-track="reload"></script>
+  
+</head>
+<body class="page-topics" data-controller-name="topics">
+  <div class="header">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-default navbar-fixed-active fixed-title">
+      <div class="container">
+        <div class="navbar-header" id="navbar-header" data-turbolinks-permanent="">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+            <span class="sr-only">Toggle</span>
+            <i class="fa fa-reorder"></i>
+          </button>
+          <a href="https://ruby-china.org/" class="navbar-brand"><b>Ruby</b> China</a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar-collapse">
+                <div class="navbar-nav">
+        <div class="navbar-topic-title">
+          <a href="https://ruby-china.org/topics/28000#" class="topic-title pull-left" title="11 款开放中文分词引擎大比拼" data-type="top">
+            <h1><span class="node">搜索引擎</span> 11 款开放中文分词引擎大比拼</h1>
+          </a>
+        </div>
+      </div>
+
+          <div id="main-nav-menu">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="https://ruby-china.org/topics">社区</a></li><li class=""><a href="https://ruby-china.org/posts">头条</a></li><li class=""><a href="https://ruby-china.org/jobs">招聘</a></li><li class=""><a href="https://ruby-china.org/wiki">Wiki</a></li><li class=""><a href="https://ruby-china.org/sites">酷站</a></li>
+    <li class="nav-gems hidden-xs"><a href="https://gems.ruby-china.org/" target="_blank" rel="noopener">Gems</a></li>
+
+  </ul>
+</div>
+
+        </div>
+        <ul class="nav user-bar navbar-nav navbar-right">
+  <li><a href="https://ruby-china.org/account/sign_up">注册</a></li>
+  <li><a href="https://ruby-china.org/account/sign_in">登录</a></li>
+</ul>
+
+<ul class="nav navbar-nav user-bar navbar-right">
+  <li class="nav-search hidden-xs hidden-sm">
+    <form class="navbar-form form-search active" action="https://ruby-china.org/search" method="GET">
+      <div class="form-group">
+        <input class="form-control" name="q" type="text" value="" placeholder="搜索本站内容">
+      </div>
+      <i class="fa btn-search fa-search"></i>
+    </form>
+  </li>
+</ul>
+
+      </div>
+    </nav>
+  </div>
+
+  
+
+  <div id="main" class="main-container container">
+    
+    
+    
+
+<div class="row">
+  <div class="col-md-9">
+    <div class="topic-detail panel panel-default">
+      <div class="panel-heading media clearfix">
+  <div class="media-body">
+    <h1 class="media-heading">
+      <a class="node" href="https://ruby-china.org/topics/node39">搜索引擎</a>
+      11 款开放中文分词引擎大比拼
+      
+    </h1>
+    <div class="info">
+      <a data-author="true" class="user-name" data-name="BosonNLP" href="https://ruby-china.org/bosonnlp">bosonnlp</a>
+       ·
+      发布于 <abbr class="timeago" title="2015年11月09日">2015年11月09日</abbr>
+         ·
+        最后由 <a class="user-name" data-name="bastengao" href="https://ruby-china.org/bastengao">bastengao</a> 回复于 <abbr class="timeago" title="2015年11月11日">2015年11月11日</abbr>
+       ·
+      9874 次阅读
+    </div>
+  </div>
+  <div class="avatar media-right">
+    <a title="bosonnlp (BosonNLP)" href="https://ruby-china.org/bosonnlp"><img class="media-object avatar-48" src="./11 款开放中文分词引擎大比拼 · Ruby China_files/20845.jpg!md" alt="20845"></a>
+  </div>
+</div>
+
+
+
+      <div class="panel-body markdown markdown-toc"><div class="toc-container dropdown pull-right">
+  <button data-toggle="dropdown" class="btn btn-default">
+    <i class="fa fa-list"></i> 目录 <span class="caret"></span>
+  </button>
+  <div class="toc-panel dropdown-menu">
+    <div class="list-container">
+      <ul class="list"></ul>
+    </div>
+  </div>
+</div>
+        
+
+        <p>在逐渐步入DT（Data Technology）时代的今天，自然语义分析技术越发不可或缺。对于我们每天打交道的中文来说，并没有类似英文空格的边界标志。而理解句子所包含的词语，则是理解汉语语句的第一步。汉语自动分词的任务，通俗地说，就是要由机器在文本中的词与词之间自动加上空格。
+一提到自动分词，通常会遇到两种比较典型的质疑。一种质疑是来自外行人的：这件事看上去平凡之极，好像一点儿也不“fancy”，会有什么用呢？另一种质疑则是来自业内：自动分词研究已经进行了数年，而网上也存在各种不同的开放分词系统，但对于实际商用似乎也未见一个“即插即用”的系统。
+那么，目前常见的开放分词引擎，到底性能如何呢？为了进行测试，我们调研了11款网上常见的并且公开提供服务的分词系统，包括：</p>
+
+<p><a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/63c22c1615f11ece6a5c427297c47534.png" class="zoom-image fluidbox fluidbox-closed" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 989;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/63c22c1615f11ece6a5c427297c47534.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 484px; height: 549px; top: 0px; left: 166.75px; background-image: url(&quot;https://ruby-china-files.b0.upaiyun.com/photo/2015/63c22c1615f11ece6a5c427297c47534.png&quot;); opacity: 0; transform: translate(0px, 0px) scale(1);"></div></div></a><br>
+分词的客观量化测试离不开标注数据，即人工所准备的分词“标准答案”。在数据源方面，我们将测试分为:
+1.新闻数据：140篇，共30517词语；
+2.微博数据：200篇，共12962词语；
+3.汽车论坛数据（汽车之家）100篇：共27452词语；
+4.餐饮点评数据（大众点评）：100条，共8295词语。</p>
+
+<p>准确度计算规则：</p>
+
+<ol>
+<li>将所有标点符号去除，不做比较</li>
+<li>参与测试的部分系统进行了实体识别，可能造成词语认定的不统一。我们将对应位置替换成了人工标注的结果，得到准确率估算的上界。</li>
+<li>经过以上处理，用SIGHAN 分词评分脚本比较得到最终的准确率，召回率和F1值。</li>
+</ol>
+
+<p>以上所有数据采用北大现代汉语基本加工规范对所有数据进行分词作为标准。具体数据下载地址请参见附录。通过这四类数据综合对比不同分词系统的分词准确度。
+         <a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/1ad1f334af20ccdf927675b19047e683.png" class="zoom-image fluidbox fluidbox-closed" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 990;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/1ad1f334af20ccdf927675b19047e683.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 611px; height: 810px; top: 0px; left: 103.25px; background-image: url(&quot;https://ruby-china-files.b0.upaiyun.com/photo/2015/1ad1f334af20ccdf927675b19047e683.png&quot;); opacity: 0; transform: translate(0px, 0px) scale(1);"></div></div></a>
+上图为参与比较的10款分词引擎在不同数据的分词准确度结果。可以看出，在所测试的四个数据集上，BosonNLP和哈工大语言云都取得了较高的分词准确率，尤其在新闻数据上。因为庖丁解牛是将所有可能成词的词语全部扫描出来（例如：“最不满意”分为：“最不  不满   满意”），与其他系统输出规范不同，因而不参与准确率统计。
+为了更直接的比较不同数据源的差别，我们从每个数据源的测试数据中抽取比较典型的示例进行更直观的对比。</p>
+
+<p>【新闻数据】
+新闻数据的特点是用词规整，符合语法规则，也是普遍做得比较不错的一个领域。对比其他数据源，有7家系统都在新闻领域达到最高。包括IKAnalyzer、盘古分词、搜狗分词、新浪云、NLPIR、语言云、BosonNLP。并且有三家系统准确率超过90%。</p>
+
+<p><a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/5855d741ad6e49b607cc5b9cf37178c1.png" class="zoom-image fluidbox" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 989;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/5855d741ad6e49b607cc5b9cf37178c1.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 818px; height: 66px; top: 0px; left: 0px;"></div></div></a></p>
+
+<p>【微博数据】
+微博数据用词多样、话题广泛，并常包含错别字及网络流行词。能够比较全面的体现每家分词系统的准确度。</p>
+
+<p><a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/85375d58c7984780d90604ef3c7f2614.png" class="zoom-image fluidbox" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 989;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/85375d58c7984780d90604ef3c7f2614.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 807px; height: 127px; top: 0px; left: 5.25px;"></div></div></a></p>
+
+<p>【汽车论坛】
+汽车数据是针对汽车领域的专业评价数据，会出现很多的专业术语。例如示例中的“胎噪”、“风燥”等，如果系统没有足够强大的训练词库或领域优化，会使准确率有较大程度降低。比较有意思的是，对比其他数据源，有3家系统都在汽车论坛领域达到最高：腾讯文智、SCWS中文分词、结巴分词。</p>
+
+<p><a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/94d743144faad6ff0e9e9b0eed1a8bf0.png" class="zoom-image fluidbox" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 989;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/94d743144faad6ff0e9e9b0eed1a8bf0.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 792px; height: 45px; top: 0px; left: 12.75px;"></div></div></a></p>
+
+<p>【餐饮点评】
+餐饮点评数据为顾客评论数据，更偏重口语化。会出现很多类似“闺蜜”、“萌萌哒”口语化词语和很多不规范的表达，使分词更加困难。</p>
+
+<p><a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/219f842e00b45a609771b620abc052a4.png" class="zoom-image fluidbox" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 989;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/219f842e00b45a609771b620abc052a4.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 816px; height: 78px; top: 0px; left: 0.75px;"></div></div></a></p>
+
+<p>各家系统对于多数简单规范的文本的分词已经达到很高的水平。但在仔细对比每一家中文分词后依旧发现切分歧义词和未登陆词（即未在训练数据中出现的词）仍然是影响分词准确度的两大“拦路虎”。
+1.切分歧义：根据测试数据的切分结果，一类属于机器形式的歧义，在真实语言环境下，只有唯一可能的正确切分结果，称其为伪歧义。另一类有两种以上可实现的切分结果，称为真歧义。由于真歧义数据无法比较正确或者错误。所有我们着重举例来比较各家系统对伪歧义的处理效果。</p>
+
+<p><a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/dfe3b6431b0e2c896ac19f9840d68efb.png" class="zoom-image fluidbox" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 989;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/dfe3b6431b0e2c896ac19f9840d68efb.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 818px; height: 174px; top: 0px; left: 0px;"></div></div></a></p>
+
+<p>示例中原意指伦敦奥运会可能有一位沙特阿拉伯的女子，错误分词的意思是指上将（军衔）中有一位是沙特阿拉伯的女子，句意截然不同。当然，分析的层次越深，机器对知识库质量、规模等的依赖性就越强，所需要的时间、空间代价也就越大。
+2.未登录词：未登录词大致包含三大类：
+a)新涌现的通用词：类似“神马”、“纳尼”、“甩卖”、“玫瑰金”等新思想、新事物所带来的新词汇，不管是文化的、政治的、还是经济的，在人们的生活中不断涌现。同时很多词语也具有一定的时效性。
+b)专业术语：是相对日常用语而言的，一般指的某一行业各种名称用语，大多数情况为该领域的专业人士所熟知。这种未登录词理论上是可预期的。能够人工预先添加到词表中（但这也只是理想状态，在真实环境下并不易做到）。
+c)专有名词：如中国人名、外国译名、地名、公司名等。这种词语很多基本上不可通过词典覆盖，考验分词系统的新词识别能力。</p>
+
+<p>【新涌现的通用词或专业术语】
+示例中的蓝色字包括专业术语：“肚腩”、“腹肌”、“腹直肌”、“腹外斜肌”、“腹横肌”；新涌现的通用词：“人鱼线”、“马甲线”。大多数的系统对于示例文本的分词结果都不够理想，例如：“大肚  腩”（SCWS中文分词） “腹  直  肌  腹  外  斜  肌”（搜狗分词、IKAnalyer、NLPIR、SCWS中文分词）、“人  鱼线”（PHP结巴分词）。总的来说这两种类型的数据每家系统都存在一定的缺陷，相对而言哈工大的语言云在这方面表现的较好。</p>
+
+<p><a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/ebdf7fd34c4c64367c2673747b8fc629.png" class="zoom-image fluidbox" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 989;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/ebdf7fd34c4c64367c2673747b8fc629.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 818px; height: 172px; top: 0px; left: 0px;"></div></div></a></p>
+
+<p>【专有名词】
+示例出现的专有名词包括“蒂莫西伊斯顿”（姓名）、“英国”“意大利”“北欧”（地点）、“金斯敦”（机构名）、“伊丽莎白  格林希尔兹”（机构名）。而这种用词典无法穷尽的专有名词也成为各家分词准确率降低的重要原因。其中搜狗分词、IKAnalyer、PHP结巴分词、腾讯文智、SCWS中文分词在新词识别时较为谨慎，常将这类专有名词切分成多个词语。 </p>
+
+<p><a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/054ef77b7a046561107d1ac6ec1f9a93.png" class="zoom-image fluidbox" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 989;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/054ef77b7a046561107d1ac6ec1f9a93.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 811px; height: 123px; top: 0px; left: 3.25px;"></div></div></a></p>
+
+<p>当然在分词准确度可以接受的情况下，很多细节问题，包括是否有出错情况、是否支持各种字符、是否标注词性等都可能让我们望而却步。在分词颗粒度选择当中，BosonNLP、SCWS、盘古分词、结巴分词、庖丁解牛都提供了多种选择，可以根据需求来采用不同的分词粒度。与北大的分词标准对比来说，新浪云默认的分词粒度较大，而搜狗分词、腾讯文智分词粒度相对较小。除此之外，BosonNLP、新浪云、NLPIR、腾讯文智同时提供了实体识别、情感分析、新闻分类等其他扩展服务。下表给出了各家系统在应用方面的详细对比。
+<a href="./11 款开放中文分词引擎大比拼 · Ruby China_files/6ac66cd3756a64fba395fe307512a009.png" class="zoom-image fluidbox" data-action="zoom"><div class="fluidbox-wrap" style="z-index: 989;"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/6ac66cd3756a64fba395fe307512a009.png" title="" alt="" style="opacity: 1;"><div class="fluidbox-ghost" style="width: 602px; height: 458px; top: 0px; left: 107.75px;"></div></div></a>
+中文分词是其他中文信息处理的基础，并且在很多领域都有广泛的应用，包括搜索引擎、机器翻译（MT）、语音合成、自动分类、自动摘要、自动校对等等。随着非结构化文本的广泛应用，中文分词等文本处理技术也变得越来越重要。通过评测可以看出，部分开放分词系统在不同领域已经达到较高准确率。对于数据分析处理的从业者，相信在此之上构建数据分析系统、人机交互平台，更能够起到事半功倍的效果。</p>
+
+<p><em>注意：分词数据准备及评测由BosonNLP完成。</em></p>
+
+<p><strong>附录</strong>
+评测数据地址
+<a href="http://bosonnlp.com/dev/resource" rel="nofollow" target="_blank">http://bosonnlp.com/dev/resource</a></p>
+
+<p>各家分词系统链接地址
+BosonNLP：<a href="http://bosonnlp.com/dev/center" rel="nofollow" target="_blank">http://bosonnlp.com/dev/center</a>
+IKAnalyzer：<a href="http://www.oschina.net/p/ikanalyzer" rel="nofollow" target="_blank">http://www.oschina.net/p/ikanalyzer</a>
+NLPIR：<a href="http://ictclas.nlpir.org/docs" rel="nofollow" target="_blank">http://ictclas.nlpir.org/docs</a>
+SCWS中文分词：<a href="http://www.xunsearch.com/scws/docs.php" rel="nofollow" target="_blank">http://www.xunsearch.com/scws/docs.php</a>
+结巴分词：<a href="https://github.com/fxsjy/jieba" rel="nofollow" target="_blank">https://github.com/fxsjy/jieba</a>
+盘古分词：<a href="http://pangusegment.codeplex.com/" rel="nofollow" target="_blank">http://pangusegment.codeplex.com/</a>
+庖丁解牛：<a href="https://code.google.com/p/paoding/" rel="nofollow" target="_blank">https://code.google.com/p/paoding/</a>
+搜狗分词：<a href="http://www.sogou.com/labs/webservice/" rel="nofollow" target="_blank">http://www.sogou.com/labs/webservice/</a>
+腾讯文智：
+<a href="http://www.qcloud.com/wiki/API%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3" rel="nofollow" target="_blank">http://www.qcloud.com/wiki/API%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3</a>
+新浪云：<a href="http://www.sinacloud.com/doc/sae/python/segment.html" rel="nofollow" target="_blank">http://www.sinacloud.com/doc/sae/python/segment.html</a>
+语言云：<a href="http://www.ltp-cloud.com/document" rel="nofollow" target="_blank">http://www.ltp-cloud.com/document</a></p>
+
+        
+      </div>
+
+      <div class="panel-footer clearfix">
+        <div class="opts">
+    <a data-count="16" data-state="" data-type="Topic" data-id="28000" class="likeable  tooltipstered" href="https://ruby-china.org/topics/28000#"><i class="fa fa-heart"></i> <span>16 个赞</span></a>
+    
+    
+
+  <span class="pull-right opts">
+  </span>
+</div>
+
+      </div>
+    </div>
+
+    
+
+    <div id="replies" class="panel panel-default" data-last-floor="5">
+      <div class="total panel-heading hide-ios">
+        共收到 <b>5</b> 条回复
+      </div>
+      <div class="items panel-body">
+        <div class="reply" data-id="280190" id="reply1">
+  <div id="reply-280190" data-floor="1">
+      <div class="avatar"><a title="chairy11 (YBY)" href="https://ruby-china.org/chairy11"><img class="media-object avatar-48" src="./11 款开放中文分词引擎大比拼 · Ruby China_files/827.jpg!md" alt="827"></a></div>
+      <div class="infos">
+        <div class="info">
+          <span class="name">
+            <a class="user-name" data-name="YBY" href="https://ruby-china.org/chairy11">chairy11</a>
+          </span> ·
+          <span class="floor">#1</span> ·
+          <a class="time" href="https://ruby-china.org/topics/28000#reply-280190"><abbr class="timeago" title="2015年11月10日">2015年11月10日</abbr></a>
+          <span class="opts pull-right">
+              <span class="hideable">
+              <a class="edit fa fa-pencil" data-uid="827" title="修改回帖" href="https://ruby-china.org/topics/28000/replies/280190/edit"></a>
+              <a data-id="280190" data-login="chairy11" title="回复此楼" class="btn-reply fa fa-mail-reply" href="https://ruby-china.org/topics/28000#"></a>
+              </span>
+              <a title="赞" data-count="0" data-state="" data-type="Reply" data-id="280190" class="likeable " href="https://ruby-china.org/topics/28000#"><i class="fa fa-heart"></i> <span></span></a>
+          </span>
+        </div>
+        
+        <div class="markdown">
+          <p>好牛！我要学习！
+不过光看名字，如果要选择，我第一直觉就是：1. 搜狗（因为人家的输入法？），2.腾讯（因为觉得腾讯出品，必属精品？）
+其它？额，没时间研究了……</p>
+
+<blockquote>
+<p>「分词数据准备及评测由BosonNLP完成」，这感觉……</p>
+</blockquote>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="reply" data-id="280193" id="reply2">
+  <div id="reply-280193" data-floor="2">
+      <div class="avatar"><a title="psvr (潘旻琦)" href="https://ruby-china.org/psvr"><img class="media-object avatar-48" src="./11 款开放中文分词引擎大比拼 · Ruby China_files/756.jpg!md" alt="756"></a></div>
+      <div class="infos">
+        <div class="info">
+          <span class="name">
+            <a class="user-name" data-name="潘旻琦" href="https://ruby-china.org/psvr">psvr</a>
+          </span> ·
+          <span class="floor">#2</span> ·
+          <a class="time" href="https://ruby-china.org/topics/28000#reply-280193"><abbr class="timeago" title="2015年11月10日">2015年11月10日</abbr></a>
+          <span class="opts pull-right">
+              <span class="hideable">
+              <a class="edit fa fa-pencil" data-uid="756" title="修改回帖" href="https://ruby-china.org/topics/28000/replies/280193/edit"></a>
+              <a data-id="280193" data-login="psvr" title="回复此楼" class="btn-reply fa fa-mail-reply" href="https://ruby-china.org/topics/28000#"></a>
+              </span>
+              <a title="赞" data-count="0" data-state="" data-type="Reply" data-id="280193" class="likeable " href="https://ruby-china.org/topics/28000#"><i class="fa fa-heart"></i> <span></span></a>
+          </span>
+        </div>
+        
+        <div class="markdown">
+          <p>可以发论文了！</p>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="reply" data-id="280211" id="reply3">
+  <div id="reply-280211" data-floor="3">
+      <div class="avatar"><a title="zhang_soledad (soledad)" href="https://ruby-china.org/zhang_soledad"><img class="media-object avatar-48" src="./11 款开放中文分词引擎大比拼 · Ruby China_files/5178.png!md" alt="5178"></a></div>
+      <div class="infos">
+        <div class="info">
+          <span class="name">
+            <a class="user-name" data-name="soledad" href="https://ruby-china.org/zhang_soledad">zhang_soledad</a>
+          </span> ·
+          <span class="floor">#3</span> ·
+          <a class="time" href="https://ruby-china.org/topics/28000#reply-280211"><abbr class="timeago" title="2015年11月10日">2015年11月10日</abbr></a>
+          <span class="opts pull-right">
+              <span class="hideable">
+              <a class="edit fa fa-pencil" data-uid="5178" title="修改回帖" href="https://ruby-china.org/topics/28000/replies/280211/edit"></a>
+              <a data-id="280211" data-login="zhang_soledad" title="回复此楼" class="btn-reply fa fa-mail-reply" href="https://ruby-china.org/topics/28000#"></a>
+              </span>
+              <a data-count="1" data-state="" data-type="Reply" data-id="280211" class="likeable  tooltipstered" href="https://ruby-china.org/topics/28000#"><i class="fa fa-heart"></i> <span>1 个赞</span></a>
+          </span>
+        </div>
+        
+        <div class="markdown">
+          <p>评测有些地方没写清楚，是不是没考虑到，上面的分词引擎我稍有了解的是 IKAnalyzer 、NLPIR 、结巴分词、庖丁解牛这类 ，这类分词都是基于字符串匹配的分词方法，区别在于是不同算法的实现，代码优化程度不同，分词的效果也会有偏差。 </p>
+
+<p>但是还有个重要因素，就是词库，使用的词库对分词的效果影响很大，词库的词如果和分词相关文本领域相关度高，效果会提升很多，评测的时候有采用统一的词库剔除干扰么？</p>
+
+<p>对于这类分词引擎来说 ，是否支持词库扩展，是否能热加载词库，也是重要衡量标准。</p>
+
+<p><a href="https://github.com/zhangsoledad/solr-ik">https://github.com/zhangsoledad/solr-ik</a>
+当初我也是做过粗略的调研，选择了IK，也只是略懂，请多指教。</p>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="reply" data-id="280330" id="reply4">
+  <div id="reply-280330" data-floor="4">
+      <div class="avatar"><a title="naitnix (Erick)" href="https://ruby-china.org/naitnix"><img class="media-object avatar-48" src="./11 款开放中文分词引擎大比拼 · Ruby China_files/871.jpg!md" alt="871"></a></div>
+      <div class="infos">
+        <div class="info">
+          <span class="name">
+            <a class="user-name" data-name="Erick" href="https://ruby-china.org/naitnix">naitnix</a>
+          </span> ·
+          <span class="floor">#4</span> ·
+          <a class="time" href="https://ruby-china.org/topics/28000#reply-280330"><abbr class="timeago" title="2015年11月11日">2015年11月11日</abbr></a>
+          <span class="opts pull-right">
+              <span class="hideable">
+              <a class="edit fa fa-pencil" data-uid="871" title="修改回帖" href="https://ruby-china.org/topics/28000/replies/280330/edit"></a>
+              <a data-id="280330" data-login="naitnix" title="回复此楼" class="btn-reply fa fa-mail-reply" href="https://ruby-china.org/topics/28000#"></a>
+              </span>
+              <a title="赞" data-count="0" data-state="" data-type="Reply" data-id="280330" class="likeable " href="https://ruby-china.org/topics/28000#"><i class="fa fa-heart"></i> <span></span></a>
+          </span>
+        </div>
+        
+        <div class="markdown">
+          <p>波森挺好</p>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="reply" data-id="280375" id="reply5">
+  <div id="reply-280375" data-floor="5">
+      <div class="avatar"><a title="bastengao" href="https://ruby-china.org/bastengao"><img class="media-object avatar-48" src="./11 款开放中文分词引擎大比拼 · Ruby China_files/845.jpg!md" alt="845"></a></div>
+      <div class="infos">
+        <div class="info">
+          <span class="name">
+            <a class="user-name" data-name="" href="https://ruby-china.org/bastengao">bastengao</a>
+          </span> ·
+          <span class="floor">#5</span> ·
+          <a class="time" href="https://ruby-china.org/topics/28000#reply-280375"><abbr class="timeago" title="2015年11月11日">2015年11月11日</abbr></a>
+          <span class="opts pull-right">
+              <span class="hideable">
+              <a class="edit fa fa-pencil" data-uid="845" title="修改回帖" href="https://ruby-china.org/topics/28000/replies/280375/edit"></a>
+              <a data-id="280375" data-login="bastengao" title="回复此楼" class="btn-reply fa fa-mail-reply" href="https://ruby-china.org/topics/28000#"></a>
+              </span>
+              <a title="赞" data-count="0" data-state="" data-type="Reply" data-id="280375" class="likeable " href="https://ruby-china.org/topics/28000#"><i class="fa fa-heart"></i> <span></span></a>
+          </span>
+        </div>
+        
+        <div class="markdown">
+          <p>之前做 lucene 和 solr 的时候用过庖丁解牛和IK，现在都有这么多了！ </p>
+        </div>
+      </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div id="reply" class="form box">
+  <div style="padding:20px;" data-turbolinks-action="replace">
+    需要 <a class="btn btn-primary" href="https://ruby-china.org/account/sign_in">登录</a> 后方可回复, 如果你还没有账号请点击这里 <a class="btn btn-danger" href="https://ruby-china.org/account/sign_up">注册</a>。
+  </div>
+</div>
+
+      </div>
+    </div>
+
+      <div class="panel panel-default">
+      <div class="panel-heading">相关话题</div>
+      <ul class="list-group">
+          <li class="list-group-item"><a href="https://ruby-china.org/topics/26845">什么是性别歧视</a></li>
+          <li class="list-group-item"><a href="https://ruby-china.org/topics/25585">[上海] 薄荷诚聘 Ruby 工程师 3 名</a></li>
+          <li class="list-group-item"><a href="https://ruby-china.org/topics/12526">从 0 到 5 公里，程序猿变身极客跑者指南</a></li>
+          <li class="list-group-item"><a href="https://ruby-china.org/topics/27782">BosonNLP 分词解密</a></li>
+          <li class="list-group-item"><a href="https://ruby-china.org/topics/14063">为什么大家不去翻译 Rails Guides</a></li>
+      </ul>
+    </div>
+
+</div>
+
+  <div class="sidebar hidden-mobile col-md-3">
+    <div id="topic-sidebar" data-spy="affix" data-offset-bottom="65" class="affix">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="https://ruby-china.org/topics/28000#" class="btn btn-block btn-sm btn-move-page" data-type="top"><i class="fa fa-arrow-up"></i></a>
+      <div class="buttons">
+        <div class="group likes opts">
+          <a data-count="16" data-state="" data-type="Topic" data-id="28000" class="likeable  tooltipstered" href="https://ruby-china.org/topics/28000#"><i class="fa fa-heart"></i> <span>16 个赞</span></a>
+        </div>
+        <div class="group">
+          <div class="btn-group" role="group">
+            
+            
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="group">
+        <div class="social-share-button" data-title="11 款开放中文分词引擎大比拼" data-img="" data-url="" data-desc="" data-via="">
+<a rel="nofollow " data-site="twitter" class="ssb-icon ssb-twitter" onclick="return SocialShareButton.share(this);" title="分享到 Twitter" href="https://ruby-china.org/topics/28000#"></a>
+<a rel="nofollow " data-site="wechat" class="ssb-icon ssb-wechat" onclick="return SocialShareButton.share(this);" title="分享到 微信" data-wechat-footer="打开微信，点击底部的 “发现”，&lt;br/&gt; 使用 “扫一扫” 即可将网页分享至朋友圈。" href="https://ruby-china.org/topics/28000#"></a>
+<a rel="nofollow " data-site="facebook" class="ssb-icon ssb-facebook" onclick="return SocialShareButton.share(this);" title="分享到 Facebook" href="https://ruby-china.org/topics/28000#"></a>
+<a rel="nofollow " data-site="google_plus" class="ssb-icon ssb-google_plus" onclick="return SocialShareButton.share(this);" title="分享到 Google+" href="https://ruby-china.org/topics/28000#"></a>
+<a rel="nofollow " data-site="weibo" class="ssb-icon ssb-weibo" onclick="return SocialShareButton.share(this);" title="分享到 新浪微博" href="https://ruby-china.org/topics/28000#"></a>
+<a rel="nofollow " data-site="douban" class="ssb-icon ssb-douban" onclick="return SocialShareButton.share(this);" title="分享到 豆瓣" href="https://ruby-china.org/topics/28000#"></a>
+</div>
+      </div>
+      <hr>
+      <div class="reply-buttons">
+        <div class="total">
+          共收到 <b>5</b> 条回复
+        </div>
+        
+      </div>
+      <hr>
+      <div class="group opts">
+
+      </div>
+      <a href="https://ruby-china.org/topics/28000#" class="btn btn-block btn-move-page" data-type="bottom"><i class="fa fa-arrow-down"></i></a>
+    </div>
+  </div>
+
+  <div class="notify-updated">
+    <a class="update" href="https://ruby-china.org/topics/28000#"><i class="fa fa-bell-o"></i> <b>有新回复！</b>点击这里立即载入</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+
+  <footer class="footer" id="footer" data-turbolinks-permanent="">
+    <div class="container">
+      <div class="media">
+  <div class="media-left" style="margin-right:20px;">
+    <img class="media-object" src="./11 款开放中文分词引擎大比拼 · Ruby China_files/c309db0b49cab85a32f756541ea0e2b0.png" style="width: 64px;">
+  </div>
+  
+  <div class="media-body">
+    <div class="links">
+      <a href="https://ruby-china.org/wiki/about">关于</a> / <a href="http://rubyconfchina.org/" target="_blank" title="RubyConf China 大会">RubyConf</a> / <a href="https://ruby-china.org/wiki/ruby-mirror" title="Ruby 镜像">Ruby 镜像</a> / <a href="https://gems.ruby-china.org/" target="_blank" title="RubyGems 镜像">RubyGems 镜像</a> / <a href="https://ruby-china.org/status" target="_blank">Status</a> / <a href="https://ruby-china.org/users">活跃会员</a> / <a href="https://ruby-china.org/teams">组织</a> / <a href="https://ruby-china.org/api">API</a> / <a href="https://ruby-china.org/wiki/contributors">贡献者</a>
+    </div>
+    <div class="copyright">
+    中国 Ruby 社区，由众多爱好者共同维护，致力于构建完善的 Ruby 中文社区。
+    </div>
+<div class="supports" style="margin: 10px 0;">
+    <span style="margin-right: 20px">服务器由 <a href="http://www.ucloud.cn/?utm_source=zanzhu&amp;utm_campaign=rubychina&amp;utm_medium=display&amp;utm_content=yejiao&amp;ytag=rubychina_logo" target="_blank" rel="twipsy" title="" data-original-title="本站服务器由 UCloud 赞助"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/e1eb47a05578576bf134da65736cc5b4.png" style="height: 20px; margin-top: -2px"></a> 赞助</span>
+    <span style="margin-right: 20px">CDN 由 <a href="https://www.upyun.com/https.html?utm_source=ruby&amp;utm_medium=Referral&amp;utm_content=httpsad" target="_blank" style="display:inline-block;" rel="twipsy" title="" data-original-title="CDN, Ruby Mirror, RubyGems CDN 由又拍云赞助"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/e094bd44-fd71-4ab7-9dcf-f4931f480705.png" style="height: 20px; margin-top: -2px"></a> 赞助</span>
+    <span>Gem 服务器由
+    <a href="http://www.qcloud.com/?ref=ruby-china" target="_blank" rel="twipsy" title="" data-original-title="腾讯云为 RubyGems 镜像提供国外服务器支持"><img src="./11 款开放中文分词引擎大比拼 · Ruby China_files/1977b4bcf6589a03fb4d21139955aa6a.png" style="height: 20px; margin-top: -3px"></a> 赞助</span>
+   </div>
+   <div class="links" style="margin-top:8px">
+     <span class="socials">
+     <a href="http://github.com/ruby-china" target="_blank" rel="nofollow" title="本站在 GitHub 上面的开源内容"><i class="fa fa-github"></i></a>
+     <a href="http://twitter.com/ruby_china" target="_blank" rel="nofollow" title="本站的 Twitter 账号"><i class="fa fa-twitter"></i></a>
+     <a href="http://weibo.com/u/3168836987" target="_blank" rel="nofollow" title="本站的 Weibo 账号"><i class="fa fa-weibo"></i></a>
+     <a href="https://www.youtube.com/channel/UCOLKFS_uA7nX26_u8z9V9og/feed" target="_blank" rel="nofollow" title="本站在 YouTube 上面的视频内容"><i class="fa fa-youtube"></i></a>
+     <a href="https://ruby-china.org/topics/feed" target="_blank" rel="nofollow"><i class="fa fa-rss"></i></a>
+     </span>
+
+     <span style="margin-left:20px;"><a href="https://itunes.apple.com/us/app/ruby-china/id1072028763">iOS 客户端</a> / <a href="https://play.google.com/store/apps/details?id=org.ruby_china.android">Android 客户端</a></span>
+
+     <a href="https://ruby-china.org/topics/28000?locale=zh-CN" rel="nofollow" style="margin-left: 20px">简体中文</a> / <a href="https://ruby-china.org/topics/28000?locale=zh-TW" rel="nofollow">正體中文</a> / <a href="https://ruby-china.org/topics/28000?locale=en" rel="nofollow">English</a>
+   </div>
+  </div>
+</div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" data-turbolinks-eval="false">
+    App.root_url = "https://ruby-china.org/";
+    App.asset_url = "https://l.ruby-china.org";
+    App.twemoji_url = "https://twemoji.b0.upaiyun.com/2";
+    App.locale = "zh-CN";
+  </script>
+    <script type="text/javascript">
+    Topics.topic_id = 28000;
+    $(document).ready(function(){
+
+    })
+  </script>
+
+  <script>
+    ga('create', 'UA-26598064-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
+  <div class="zoom-overlay"></div>
+
+
+</body></html>
